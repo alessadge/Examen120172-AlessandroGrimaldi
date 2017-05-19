@@ -10,7 +10,7 @@ int main(){
    char opcion;
    char opcion2;
    vector<Obras> Museo;
-   string nombre, ID, autor, artista;
+   string nombre, ID="", autor, artista;
    int fechaIngresada;
    
    while(opcion!='f'){
@@ -37,11 +37,73 @@ int main(){
 	    cin>>autor;
 	    cout<<"Ingrese un artista: "<<endl;
 	    cin>>artista;
-	    
-	    
+
+	    cout<<"Ingrese el genero: "<<endl;
+	    cin>>genero;
+	    cout<<"Ingrese la epoca: "<<endl;
+	    cin>>epoca;
+	    Museo.push_back(Literatura(genero, epoca,nombre, ID, autor, artista,fechaIngresada);
+	    cout<<"Se agrego exitosamente! "<<endl;
 
 	 }
+
+	 if(opcion2=='b'||opcion2=='B'){
+	    string material;
+	    double peso;
+	    cout<<"Ingrese un nombre: "<<endl;
+                cin>>nombre;
+                cout<<"Ingrese un autor: "<<endl;
+                cin>>autor;
+                cout<<"Ingrese un artista: "<<endl;
+                cin>>artista;
+	       
+	        cout<<"Ingrese el material: "<<endl;
+	        cin>>material;
+	        cout<<"Ingrese el peso: "<<endl;
+	        cin>>peso;
+	        Museo.push_back(Esculturas(peso,material,nombre,ID,autor,artista,fechaIngresada);
+	        cout<<"Se agrego exitosamente! "<<endl;
+
+	  }
+	 if(opcion2=='c'||opcion2=='C'){
+	    string tecnica, material;
+	 	    cout<<"Ingrese un nombre: "<<endl;
+                    cin>>nombre;
+                    cout<<"Ingrese un autor: "<<endl;
+                    cin>>autor;
+                    cout<<"Ingrese un artista: "<<endl;
+                    cin>>artista;
+		    cout<<"Ingrese el material: "<<endl;
+		    cin>>material;
+		    cout<<"Ingrese la tecnica: "<<endl;
+		    cin>>tecnica;
+
+		    Museo.push_back(Pinturas(tecnica,material,nombre,ID,autor,artista,fechaIngresada);
+		    cout<<"Se agrego exitosamente!"<<endl;
+	 }
+	 
+	 if(opcion2=='d'||opcion2=='D'){
+	    string terreno;
+	       cout<<"Ingrese un nombre: "<<endl;
+                        cin>>nombre;
+                        cout<<"Ingrese un autor: "<<endl;
+                        cin>>autor;
+                        cout<<"Ingrese un artista: "<<endl;
+                        cin>>artista;
+                        cout<<"Ingrese el terreno: "<<endl;
+                        cin>>terreno;
+                        Museo.push_back(Disenos(terreno,nombre, ID, autor,artista, fechaIngresada);
+			cout<<"Se agrego exitosamente!"<<endl;
+
+	 }//fin D
       }
+      if(opcion=='b'||opcion=='B'){
+	 int pos;
+	 cout<<"Cual posicion quiere eliminar? "<<endl;
+	 cin>>pos;
+	 Museo.erase(Museo.begin()+pos);
+	 cout<<"Se elimino exitosamente"<<endl;
+      }//fin if b
    }
 return 0;
 }

@@ -1,10 +1,16 @@
 #include "Esculturas.h"
 #include "Obras.h"
 
-Esculturas::Esculturas (double peso, string material){
+Esculturas::Esculturas (double peso, string material, string nombre, string ID, string autor, string artista, int fechaIngresada){
 
-  this-> material = material;
   this-> peso = peso;
+  this-> material = material;
+  this-> nombre = nombre;
+  this-> ID= ID;
+  this-> autor= autor;
+  this-> artista = artista;
+  this-> fechaIngresada= fechaIngresada;
+
 }
 
 Esculturas::Esculturas(){

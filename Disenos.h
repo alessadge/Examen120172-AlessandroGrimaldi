@@ -8,8 +8,8 @@ class Disenos:public Obras{
    string terreno();
    
  public:
-   Esculturas();
-   Esculturas(string);
+   Disenos();
+   Disenos(string,string,string,string,string,int);
 
    string getTerreno();
    void setTerreno(string);

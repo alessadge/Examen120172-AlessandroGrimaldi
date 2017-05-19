@@ -10,7 +10,7 @@ class Literatura:public Obras{
  public:
    Literatura();
    Literatura(string, string);
-
+   Literatura(string, string, string, string, string, string, int);
    string getGenero();
    void setGenero(string);
 

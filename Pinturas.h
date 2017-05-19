@@ -8,8 +8,8 @@ class Pinturas:public Obras{
    string tecnica();
    string material();
  public:
-   Esculturas();
-   Esculturas(string, string);
+   Pinturas();
+   Pinturas(string, string,string,string,string,string,int);
 
    string getTecnica();
    void setPeso(double);

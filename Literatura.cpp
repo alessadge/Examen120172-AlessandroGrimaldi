@@ -7,6 +7,18 @@ Literatura::Literatura (string genero, string epoca){
   this-> genero = genero;
 }
 
+Literatura::Literatura (string genero, string epoca, string nombre, string ID, string autor, string artista, int fechaIngresada){
+
+  this-> epoca = epoca;
+  this-> genero = genero;
+  this-> nombre = nombre;
+  this-> ID= ID;
+  this-> autor= autor;
+  this-> artista = artista;
+  this-> fechaIngresada= fechaIngresada;
+
+}
+
 Literatura::Literatura(){
 
 }
