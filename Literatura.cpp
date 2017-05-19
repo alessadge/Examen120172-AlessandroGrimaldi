@@ -8,11 +8,11 @@ Literatura::Literatura (string genero, string epoca){
 }
 
 Literatura::Literatura (string genero, string epoca, string nombre, string ID, string autor, string artista, int fechaIngresada) :
-Obras(nombre, ID, autor, artista, fechaIngresada){
+Obras(ID,nombre, autor, artista, fechaIngresada){
 
   this-> epoca = epoca;
   this-> genero = genero;
-	/* this-> ID= ID;
+ /* this-> ID= ID;
   this-> autor= autor;
   this-> artista = artista;
   this-> fechaIngresada= fechaIngresada;

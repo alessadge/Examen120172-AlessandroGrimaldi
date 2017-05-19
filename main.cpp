@@ -52,7 +52,8 @@ int main(){
 	    cout<<"Ingrese la epoca: "<<endl;
 	    cin>>epoca;
 	    ID=hexadecimal(Museo);
-	    Museo.push_back( Literatura(genero, epoca,nombre, ID, autor, artista,fechaIngresada));
+	    Museo.push_back(Literatura(genero, epoca,nombre, ID, autor, artista,fechaIngresada));
+	    //Museo[0].setID(ID);
 	    cout<<"Se agrego exitosamente! "<<endl;
 
 	 }
@@ -166,32 +167,36 @@ string hexadecimal(vector<Obras> arreglo){
   string acum;
   int random;
   int contador=0;
-  pauta[0]="1";
-  pauta[1]="2";
-  pauta[2]="3";
-  pauta[3]="4";
-  pauta[4]="5";
-  pauta[5]="6";
-  pauta[6]="7";
-  pauta[7]="8";
-  pauta[8]="9";
-  pauta[9]="A";
-  pauta[10]="B";
-  pauta[11]="C";
-  pauta[12]="D";
-  pauta[13]="E";
-  pauta[14]="F";
-    while(contador!=0){
+  pauta.push_back("1");
+  pauta.push_back("2");
+  pauta.push_back("3");
+  pauta.push_back("4");
+  pauta.push_back("5");
+  pauta.push_back("6");
+  pauta.push_back("7");
+  pauta.push_back("8");
+  pauta.push_back("9");
+  pauta.push_back("A");
+  pauta.push_back("B");
+  pauta.push_back("C");
+  pauta.push_back("D");
+  pauta.push_back("E");
+  pauta.push_back("F");
+
+
+   while(contador==0){ 
     for(int f = 0; f < 6; f++){
-	random = rand()%14;
-	acum += pauta[random];
-	
+	random = rand()%15;
+	acum=acum+ pauta[random];
+		
     }
-    contador=0;
+    contador=1;
     for(int i = 0; i < arreglo.size();i++){
 	if(acum==arreglo[i].getID()){
 		contador=1;
 	}
-    }
+    cout<<acum<<endl;
 }
+}
+return acum;
 }
