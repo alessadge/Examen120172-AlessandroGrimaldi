@@ -1,6 +1,7 @@
 #ifndef LITERATURA_H
 #define LITERATURA_H
-#include <Obras.h>
+#include "Obras.h"
+#include <string>
 
 class Literatura:public Obras{
 

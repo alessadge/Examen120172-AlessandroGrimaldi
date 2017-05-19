@@ -1,6 +1,7 @@
 #ifndef PINTURAS_H
 #define PINTURAS_H
-#include <Obras.h>
+#include "Obras.h"
+#include <string>
 
 class Pinturas:public Obras{
 

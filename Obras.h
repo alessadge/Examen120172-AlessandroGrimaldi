@@ -1,10 +1,13 @@
 #ifndef OBRAS_H
 #define OBRAS_H
+#include <string>
+
+using std::string;
 
 class Obras{
 
  protected:
-   string ID();
+	string ID();
    string nombre();
    string autor();
    string artista();

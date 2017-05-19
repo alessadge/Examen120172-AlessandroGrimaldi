@@ -1,6 +1,6 @@
 #ifndef ESCULTURAS_H
 #define ESCULTURAS_H
-#include <Obras.h>
+#include "Obras.h"
 
 class Esculturas:public Obras{
 

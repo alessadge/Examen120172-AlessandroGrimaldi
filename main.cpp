@@ -2,7 +2,11 @@
 #include <cstdlib>
 #include <vector>
 #include <string>
-#include <Obras.h>
+#include "Obras.h"
+#include "Literatura.h"
+#include "Esculturas.h"
+#include "Disenos.h"
+#include "Pinturas.h"
 
 using namespace std;
 
@@ -17,8 +21,8 @@ int main(){
       cout<<endl<<"MENU:"<<endl
          <<"a. Agregar"<<endl
          <<"b. Eliminar"<<endl
-         <<"c. Crear matriz"<<endl
-         <<"d. Ingresar valor en matriz"<<endl
+         <<"c. Transferir Museo"<<endl
+         <<"d. Reportes"<<endl
          <<"e. Mostrar matriz"<<endl
          <<"f. Salir"<<endl;
          cin>>opcion;
@@ -104,6 +108,8 @@ int main(){
 	 Museo.erase(Museo.begin()+pos);
 	 cout<<"Se elimino exitosamente"<<endl;
       }//fin if b
+      if(opcion=='c'||opcion=='C'){
+      }//fin if c
    }
 return 0;
 }

@@ -1,8 +1,7 @@
+Main:  main.o Literatura.o Esculturas.o Obras.o Pinturas.o Disenos.o
+	g++ main.o Literatura.o Esculturas.o Obras.o Pinturas.o Disenos.o -o Main
 
-Main:  main.o Literatura.o Esculturas.o Obras.o Pinturas.o Diseno.o
-	g++ main.o Literatura.o Esculturas.o Obras.o Pinturas.o Diseno.o -o Main
-
-Main.o: main.cpp Literatura.h Esculturas.h Obras.h Pinturas.h
+main.o: main.cpp Literatura.h Esculturas.h Obras.h Pinturas.h Disenos.h
 	g++ -c main.cpp
 
 Literatura.o: Literatura.cpp Literatura.h Obras.h
@@ -11,14 +10,14 @@ Literatura.o: Literatura.cpp Literatura.h Obras.h
 Esculturas.o: Esculturas.cpp Esculturas.h Obras.h 
 	g++ -c Esculturas.cpp
 
-Obras.o: Obras.cpp Obras.h 
+Obras.o: Obras.h Obras.cpp
 	g++ -c Obras.cpp
 
 Pinturas.o: Pinturas.cpp Pinturas.h Obras.h
 	g++ -c Pinturas.cpp
 
-Diseno.o: Diseno.cpp Diseno.h Obras.h
-	g++ -c Diseno.cpp
+Disenos.o: Disenos.cpp Disenos.h Obras.h
+	g++ -c Disenos.cpp
 
 clean:
 	rm -f *.o *.main

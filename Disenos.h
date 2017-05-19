@@ -1,6 +1,6 @@
 #ifndef DISENOS_H
 #define DISENOS_H
-#include <Obras.h>
+#include "Obras.h"
 
 class Disenos:public Obras{
 
