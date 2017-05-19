@@ -1,12 +1,12 @@
 #include "Obras.h"
 
-Obras::Obras(string ID, string nombre, string autor, string artista, int fecha){
+Obras::Obras(string ID, string nombre, string autor, string artista, int fechaIngreso){
 
   this-> ID = ID;
   this-> nombre = nombre;
   this-> autor = autor;
   this-> artista = artista;
-  this-> fecha = fecha;
+  this-> fechaIngreso = fechaIngreso;
 
 }
 
@@ -27,7 +27,7 @@ string Obras :: getNombre(){
 }
 
 void Obras :: setNombre(string nombre){
-  this->nombre=nombre
+  this->nombre=nombre;
 }
 
 string Obras :: getAutor(){
@@ -54,4 +54,4 @@ void Obras :: setFecha(int fechaIngreso){
   this->fechaIngreso=fechaIngreso;
 }
 
-~               
+               

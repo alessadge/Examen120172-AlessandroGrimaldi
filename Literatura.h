@@ -6,8 +6,8 @@
 class Literatura:public Obras{
 
  protected:
-   string genero();
-   string epoca();
+   string genero;
+   string epoca;
  public:
    Literatura();
    Literatura(string, string);
@@ -22,5 +22,5 @@ class Literatura:public Obras{
 };
 
 #endif
-~                                                                
-~          
+                                                                
+         

@@ -9,7 +9,7 @@ Pinturas::Pinturas (string tecnica, string material, string nombre, string ID, s
   this-> ID= ID;
   this-> autor= autor;
   this-> artista = artista;
-  this-> fechaIngresada= fechaIngresada;
+  this-> fechaIngreso= fechaIngresada;
 
 }
 

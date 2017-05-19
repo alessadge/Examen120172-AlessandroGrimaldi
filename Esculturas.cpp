@@ -1,25 +1,37 @@
-#ifndef ESCULTURAS_H
-#define ESCULTURAS_H
+#include "Esculturas.h"
 #include "Obras.h"
-#include <string>
 
-class Esculturas:public Obras{
+Esculturas::Esculturas (double peso, string material, string nombre, string ID, string autor, string artista, int fechaIngresada){
 
- protected:
-   double peso();
-   string material();
- public:
-   Esculturas();
-   Esculturas(double, string,string,string,string,string,int);
+  this-> peso = peso;
+  this-> material = material;
+  this-> nombre = nombre;
+  this-> ID= ID;
+  this-> autor= autor;
+  this-> artista = artista;
+  this-> fechaIngreso= fechaIngresada;
 
-   double getPeso();
-   void setPeso(double);
+}
 
-   string getMaterial();
-   void setMaterial(string);
+Esculturas::Esculturas(){
+
+}
+
+double Esculturas :: getPeso(){
+  return peso;
+}
+
+void Esculturas :: setPeso(double epoca){
+  this->peso=peso;
+}
+
+string Esculturas :: getMaterial(){
+  return material;
+}
+
+void Esculturas :: setMaterial(string material){
+  this->material=material;
+}
 
 
-};
-
-#endif
 

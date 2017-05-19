@@ -6,14 +6,14 @@
 class Pinturas:public Obras{
 
  protected:
-   string tecnica();
-   string material();
+   string tecnica;
+   string material;
  public:
    Pinturas();
    Pinturas(string, string,string,string,string,string,int);
 
    string getTecnica();
-   void setPeso(double);
+   void setTecnica(string);
 
    string getMaterial();
    void setMaterial(string);

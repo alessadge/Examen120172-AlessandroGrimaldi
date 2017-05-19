@@ -7,11 +7,11 @@ using std::string;
 class Obras{
 
  protected:
-	string ID();
-   string nombre();
-   string autor();
-   string artista();
-   int fechaIngreso();
+	string ID;
+   string nombre;
+   string autor;
+   string artista;
+   int fechaIngreso;
  public:
    Obras();
    Obras(string,string,string,string,int);

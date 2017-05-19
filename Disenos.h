@@ -5,7 +5,7 @@
 class Disenos:public Obras{
 
  protected:
-   string terreno();
+   string terreno;
    
  public:
    Disenos();

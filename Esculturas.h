@@ -5,11 +5,11 @@
 class Esculturas:public Obras{
 
  protected:
-   double peso();
-   string material();
+   double peso;
+   string material;
  public:
    Esculturas();
-   Esculturas(double, string);
+   Esculturas(double, string,string,string,string,string,int);
 
    double getPeso();
    void setPeso(double);

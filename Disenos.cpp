@@ -15,14 +15,14 @@ void Disenos:: setTerreno(string terreno){
   this->terreno=terreno;
 }
 
-Disenos::Disenos (string terreno, string nombre, string ID, string autor, string artista, int fechaIngresada){
+Disenos::Disenos (string terreno, string nombre, string ID, string autor, string artista, int fechaIngreso){
 
   this-> terreno=terreno;
   this-> nombre = nombre;
   this-> ID= ID;
   this-> autor= autor;
   this-> artista = artista;
-  this-> fechaIngresada= fechaIngresada;
+  this-> fechaIngreso= fechaIngreso;
 
 }
 
