@@ -9,7 +9,7 @@
 #include "Pinturas.h"
 #include <stdlib.h>
 using namespace std;
-string hexadecimal(vector<string>);
+string hexadecimal(vector<obras>);
 
 int main(){
    
@@ -51,7 +51,7 @@ int main(){
 	    cin>>genero;
 	    cout<<"Ingrese la epoca: "<<endl;
 	    cin>>epoca;
-	    ID=hexadecimal(arreglo);
+	    ID=hexadecimal(Museo);
 	    Museo.push_back(new Literatura(genero, epoca,nombre, ID, autor, artista,fechaIngresada));
 	    cout<<"Se agrego exitosamente! "<<endl;
 
@@ -73,7 +73,7 @@ int main(){
 	        cin>>material;
 	        cout<<"Ingrese el peso: "<<endl;
 	        cin>>peso;
-		ID=hexadecimal(arreglo);
+		ID=hexadecimal(Museo);
 	        Museo.push_back(new Esculturas(peso,material,nombre,ID,autor,artista,fechaIngresada));
 	        cout<<"Se agrego exitosamente! "<<endl;
 
@@ -93,7 +93,7 @@ int main(){
 		    cin>>material;
 		    cout<<"Ingrese la tecnica: "<<endl;
 		    cin>>tecnica;
-		    ID=hexadecimal(arreglo);
+		    ID=hexadecimal(Museo);
 		    Museo.push_back(new Pinturas(tecnica,material,nombre,ID,autor,artista,fechaIngresada));
 		    cout<<"Se agrego exitosamente!"<<endl;
 	 }
@@ -111,7 +111,7 @@ int main(){
 
                         cout<<"Ingrese el terreno: "<<endl;
                         cin>>terreno;
-			ID=hexadecimal(arreglo);
+			ID=hexadecimal(Museo);
                         Museo.push_back(new Disenos(terreno,nombre, ID, autor,artista, fechaIngresada));
 			cout<<"Se agrego exitosamente!"<<endl;
 
@@ -157,6 +157,8 @@ int main(){
 
       }//fin if e
    }
+delete Museo;
+delete Transferir;
 return 0;
 }
 
