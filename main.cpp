@@ -57,7 +57,7 @@ int main(){
 	    cout<<"Se agrego exitosamente! "<<endl;
 
 	 }
-
+//s
 	 if(opcion2=='b'||opcion2=='B'){
 	    string material;
 	    double peso;
