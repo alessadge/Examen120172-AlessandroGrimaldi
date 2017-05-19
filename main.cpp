@@ -9,15 +9,15 @@
 #include "Pinturas.h"
 #include <stdlib.h>
 using namespace std;
-string hexadecimal(vector<obras>);
+string hexadecimal(vector<Obras>);
 
 int main(){
    
    char opcion;
    char opcion2;
    vector<string> arreglo;
-   vector<Obras*> Museo;
-   vector<Obras*> Transferir;
+   vector<Obras> Museo;
+   vector<Obras> Transferir;
    string nombre, ID="", autor, artista;
    int fechaIngresada;
    
@@ -52,7 +52,7 @@ int main(){
 	    cout<<"Ingrese la epoca: "<<endl;
 	    cin>>epoca;
 	    ID=hexadecimal(Museo);
-	    Museo.push_back(new Literatura(genero, epoca,nombre, ID, autor, artista,fechaIngresada));
+	    Museo.push_back( Literatura(genero, epoca,nombre, ID, autor, artista,fechaIngresada));
 	    cout<<"Se agrego exitosamente! "<<endl;
 
 	 }
@@ -74,7 +74,7 @@ int main(){
 	        cout<<"Ingrese el peso: "<<endl;
 	        cin>>peso;
 		ID=hexadecimal(Museo);
-	        Museo.push_back(new Esculturas(peso,material,nombre,ID,autor,artista,fechaIngresada));
+	        Museo.push_back( Esculturas(peso,material,nombre,ID,autor,artista,fechaIngresada));
 	        cout<<"Se agrego exitosamente! "<<endl;
 
 	  }
@@ -94,7 +94,7 @@ int main(){
 		    cout<<"Ingrese la tecnica: "<<endl;
 		    cin>>tecnica;
 		    ID=hexadecimal(Museo);
-		    Museo.push_back(new Pinturas(tecnica,material,nombre,ID,autor,artista,fechaIngresada));
+		    Museo.push_back(Pinturas(tecnica,material,nombre,ID,autor,artista,fechaIngresada));
 		    cout<<"Se agrego exitosamente!"<<endl;
 	 }
 	 
@@ -112,7 +112,7 @@ int main(){
                         cout<<"Ingrese el terreno: "<<endl;
                         cin>>terreno;
 			ID=hexadecimal(Museo);
-                        Museo.push_back(new Disenos(terreno,nombre, ID, autor,artista, fechaIngresada));
+                        Museo.push_back(Disenos(terreno,nombre, ID, autor,artista, fechaIngresada));
 			cout<<"Se agrego exitosamente!"<<endl;
 
 	 }//fin D
@@ -134,12 +134,12 @@ int main(){
       if(opcion=='d'||opcion=='D'){
 	cout<<"Museos: "<<endl;
 	for(int i=0; i<Museo.size();i++){
-		cout<<i<<".) "Museo[i].getNombre()<<" "<<Museo[i].getID()<<" "<<Museo[i].getAutor()<<" "<<Museo[i].getArtista()<<endl;
+		cout<<i<<".) "<<Museo[i].getNombre()<<" "<<Museo[i].getID()<<" "<<Museo[i].getAutor()<<" "<<Museo[i].getArtista()<<endl;
 
 	}
 	cout<<"Transferidos: "<<endl;
 	for(int i=0; i<Transferir.size();i++){
-                cout<<i<<".) "Transferir[i].getNombre()<<" "<<Transferir[i].getID()<<" "<<Transferir[i].getAutor()<<" "<<Transferir[i].getArtista()<<endl;
+                cout<<i<<".) "<<Transferir[i].getNombre()<<" "<<Transferir[i].getID()<<" "<<Transferir[i].getAutor()<<" "<<Transferir[i].getArtista()<<endl;
 
         }
  
@@ -157,8 +157,7 @@ int main(){
 
       }//fin if e
    }
-delete Museo;
-delete Transferir;
+
 return 0;
 }
 
